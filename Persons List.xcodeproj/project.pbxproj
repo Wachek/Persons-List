@@ -13,6 +13,8 @@
 		8B916DED285F63CC00007990 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B916DEC285F63CC00007990 /* Assets.xcassets */; };
 		8B916DF0285F63CD00007990 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B916DEE285F63CD00007990 /* LaunchScreen.storyboard */; };
 		8B916DFC285F6A2000007990 /* SmallPersonsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B916DFB285F6A2000007990 /* SmallPersonsListViewController.swift */; };
+		8B916DFE2860FB9B00007990 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B916DFD2860FB9B00007990 /* Person.swift */; };
+		8B916E002860FC8600007990 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B916DFF2860FC8500007990 /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		8B916DEF285F63CD00007990 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B916DF1285F63CD00007990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B916DFB285F6A2000007990 /* SmallPersonsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallPersonsListViewController.swift; sourceTree = "<group>"; };
+		8B916DFD2860FB9B00007990 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		8B916DFF2860FC8500007990 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 			isa = PBXGroup;
 			children = (
 				8B916DFB285F6A2000007990 /* SmallPersonsListViewController.swift */,
+				8B916DFD2860FB9B00007990 /* Person.swift */,
+				8B916DFF2860FC8500007990 /* DataManager.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -171,7 +177,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B916DFC285F6A2000007990 /* SmallPersonsListViewController.swift in Sources */,
+				8B916E002860FC8600007990 /* DataManager.swift in Sources */,
 				8B916DE4285F63C600007990 /* AppDelegate.swift in Sources */,
+				8B916DFE2860FB9B00007990 /* Person.swift in Sources */,
 				8B916DE6285F63C600007990 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
