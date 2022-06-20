@@ -68,7 +68,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Sd-by-QKT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-47" y="692"/>
+            <point key="canvasLocation" x="-204" y="730"/>
         </scene>
         <!--Item-->
         <scene sceneID="fZM-J1-XXG">
@@ -95,19 +95,47 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6RZ-5E-VsU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1022" y="692"/>
+            <point key="canvasLocation" x="-998" y="730"/>
         </scene>
         <!--PersonDetailsVC-->
         <scene sceneID="LBh-RZ-YF2">
             <objects>
-                <viewController title="PersonDetailsVC" id="yQL-7d-c6B" sceneMemberID="viewController">
+                <viewController title="PersonDetailsVC" id="yQL-7d-c6B" customClass="PersonDetailsViewController" customModule="Persons_List" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wBB-ka-EGi">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="U57-Ry-M9i">
+                                <rect key="frame" x="20" y="111" width="280" height="61"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yMg-5P-xST">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CBk-G4-CSU">
+                                        <rect key="frame" x="0.0" y="40.5" width="280" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="eBs-tl-0ca"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="U57-Ry-M9i" firstAttribute="leading" secondItem="eBs-tl-0ca" secondAttribute="leading" constant="20" id="N18-Ci-ODN"/>
+                            <constraint firstItem="U57-Ry-M9i" firstAttribute="top" secondItem="eBs-tl-0ca" secondAttribute="top" constant="20" id="d25-w9-pIj"/>
+                            <constraint firstItem="eBs-tl-0ca" firstAttribute="trailing" secondItem="U57-Ry-M9i" secondAttribute="trailing" constant="20" id="t9Y-OD-vJA"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="yQ3-GX-gqG"/>
+                    <connections>
+                        <outlet property="emailLabel" destination="CBk-G4-CSU" id="kRa-KA-hK8"/>
+                        <outlet property="phoneNumberLabel" destination="yMg-5P-xST" id="8MI-l0-POH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qlJ-13-N9i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -141,12 +169,13 @@
             </objects>
             <point key="canvasLocation" x="-996" y="-25"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="R8l-l6-N0W">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="OUk-NA-PLZ" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="OUk-NA-PLZ" customClass="TabBarViewController" customModule="Persons_List" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Rla-EO-r6c">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
