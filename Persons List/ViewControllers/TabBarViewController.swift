@@ -17,10 +17,12 @@ class TabBarViewController: UITabBarController {
         guard let viewControllers = self.viewControllers else { return }
         for viewController in viewControllers {
             if let navigationVC = viewController as? UINavigationController {
-                let smallPersonsListVC = navigationVC.topViewController as! SmallPersonsListViewController
+                if let smallPersonsListVC = navigationVC.topViewController as? SmallPersonsListViewController {
                 smallPersonsListVC.persons = persons
+                } else if let fullPersonsListVC = navigationVC.topViewController as? FullPersonsListTableViewController {
+                    fullPersonsListVC.persons = persons
+                }
             }
-
         }
     }
     

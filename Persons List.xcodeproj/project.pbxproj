@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8B26D8622861071000B3CF75 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B26D8612861071000B3CF75 /* TabBarViewController.swift */; };
 		8B26D8642861197B00B3CF75 /* PersonDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B26D8632861197B00B3CF75 /* PersonDetailsViewController.swift */; };
+		8B26D866286257B100B3CF75 /* FullPersonsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B26D865286257B100B3CF75 /* FullPersonsListTableViewController.swift */; };
 		8B916DE4285F63C600007990 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B916DE3285F63C600007990 /* AppDelegate.swift */; };
 		8B916DE6285F63C600007990 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B916DE5285F63C600007990 /* SceneDelegate.swift */; };
 		8B916DEB285F63C600007990 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B916DE9285F63C600007990 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		8B26D8612861071000B3CF75 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		8B26D8632861197B00B3CF75 /* PersonDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailsViewController.swift; sourceTree = "<group>"; };
+		8B26D865286257B100B3CF75 /* FullPersonsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullPersonsListTableViewController.swift; sourceTree = "<group>"; };
 		8B916DE0285F63C600007990 /* Persons List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Persons List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B916DE3285F63C600007990 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B916DE5285F63C600007990 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				8B916DFD2860FB9B00007990 /* Person.swift */,
 				8B916DFF2860FC8500007990 /* DataManager.swift */,
 				8B26D8632861197B00B3CF75 /* PersonDetailsViewController.swift */,
+				8B26D865286257B100B3CF75 /* FullPersonsListTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 				8B916DFC285F6A2000007990 /* SmallPersonsListViewController.swift in Sources */,
 				8B916E002860FC8600007990 /* DataManager.swift in Sources */,
 				8B916DE4285F63C600007990 /* AppDelegate.swift in Sources */,
+				8B26D866286257B100B3CF75 /* FullPersonsListTableViewController.swift in Sources */,
 				8B916DFE2860FB9B00007990 /* Person.swift in Sources */,
 				8B26D8622861071000B3CF75 /* TabBarViewController.swift in Sources */,
 				8B916DE6285F63C600007990 /* SceneDelegate.swift in Sources */,
