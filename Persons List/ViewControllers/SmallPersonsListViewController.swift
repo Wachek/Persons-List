@@ -9,12 +9,12 @@ import UIKit
 
 class SmallPersonsListViewController: UITableViewController {
 
-//    var persons: [Person] = []
-    var persons = Person.getPersonsList()
+    var persons: [Person]!
+//    var persons = Person.getPersonsList()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        navigationItem.leftBarButtonItem = editButtonItem
     }
 
     // MARK: - Table view data source
@@ -43,4 +43,19 @@ class SmallPersonsListViewController: UITableViewController {
         detailsVC.person = person
     }
 
+
+    // MARK: - Table view delegate
+    override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        .none
+    }
+    
+    override func tableView(_ tableView: UITableView, shouldIndentWhileEditingRowAt indexPath: IndexPath) -> Bool {
+        false
+    }
+    
+    override func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        let currentPerson = persons.remove(at: sourceIndexPath.row)
+        persons.insert(currentPerson, at: destinationIndexPath.row)
+    }
+    
 }

@@ -13,7 +13,15 @@ class TabBarViewController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       
+        guard let viewControllers = self.viewControllers else { return }
+        for viewController in viewControllers {
+            if let navigationVC = viewController as? UINavigationController {
+                let smallPersonsListVC = navigationVC.topViewController as! SmallPersonsListViewController
+                smallPersonsListVC.persons = persons
+            }
 
+        }
     }
     
 
@@ -23,7 +31,7 @@ class TabBarViewController: UITabBarController {
 //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 //        guard let tabBarController = segue.destination as? UITabBarController else { return }
 //        guard let viewControllers = tabBarController.viewControllers else { return }
-//        
+//
 //        viewControllers.forEach {
 //            if let smallNavigationVC = $0 as? UINavigationController {
 //                let smallPersonsListVC = smallNavigationVC.topViewController as! SmallPersonsListViewController
