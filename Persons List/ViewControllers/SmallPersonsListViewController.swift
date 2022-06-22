@@ -10,7 +10,6 @@ import UIKit
 class SmallPersonsListViewController: UITableViewController {
 
     var persons: [Person]!
-//    var persons = Person.getPersonsList()
     
     override func viewDidLoad() {
         super.viewDidLoad()

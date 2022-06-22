@@ -25,21 +25,5 @@ class TabBarViewController: UITabBarController {
             }
         }
     }
-    
-
-    
-    // MARK: - Navigation
-
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        guard let tabBarController = segue.destination as? UITabBarController else { return }
-//        guard let viewControllers = tabBarController.viewControllers else { return }
-//
-//        viewControllers.forEach {
-//            if let smallNavigationVC = $0 as? UINavigationController {
-//                let smallPersonsListVC = smallNavigationVC.topViewController as! SmallPersonsListViewController
-//                smallPersonsListVC.persons = persons
-//            }
-//        }
-//    }
 
 }
