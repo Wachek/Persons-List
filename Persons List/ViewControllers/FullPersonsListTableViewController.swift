@@ -30,18 +30,26 @@ class FullPersonsListTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "fullPerson", for: indexPath)
-//        var content = cell.defaultContentConfiguration()
-//        let person = persons[indexPath.row]
-//
-//        content.text = person.fullName
-//
-//        cell.contentConfiguration = content
+        var content = cell.defaultContentConfiguration()
+        let person = persons[indexPath.section]
+        
+        switch indexPath.row {
+        case 0:
+            content.text = person.phoneNumber
+        case 1:
+            content.text = person.email
+        default:
+            break
+        }
+        
+        cell.contentConfiguration = content
         
         return cell
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        <#code#>
+        let person = persons[section]
+        return person.fullName
     }
 
 

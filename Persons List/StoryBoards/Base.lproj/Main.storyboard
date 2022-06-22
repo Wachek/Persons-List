@@ -75,8 +75,8 @@
             <objects>
                 <navigationController id="YII-en-5Zr" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" image="person.2.fill" catalog="system" id="gRb-Mx-nNs"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Yk7-Mc-ZfY">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Yk7-Mc-ZfY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
